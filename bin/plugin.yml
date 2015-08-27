@@ -1,0 +1,4 @@
+main: serveroutgoing.JoinServer
+name: ServerTeleport
+version: 1.0
+author: Thiesyy
