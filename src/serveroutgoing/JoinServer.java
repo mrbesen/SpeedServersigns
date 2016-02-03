@@ -50,7 +50,6 @@ public class JoinServer extends JavaPlugin implements Listener{
 			reader = new FileReader(file);
 			reader2 = new FileReader(file2);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		String in2;
@@ -61,7 +60,6 @@ public class JoinServer extends JavaPlugin implements Listener{
 			IsOn.add(new Location(Bukkit.getWorld("world"), Double.parseDouble(splitted[0]), Double.parseDouble(splitted[1]), Double.parseDouble(splitted[2])));
 			}
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		String in;
@@ -72,7 +70,6 @@ public class JoinServer extends JavaPlugin implements Listener{
 				IPSave.put(sachen[0], sachen[1]);
 			}
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -82,14 +79,12 @@ public class JoinServer extends JavaPlugin implements Listener{
 	}
 @Override
 	public void onDisable() {
-		// TODO Auto-generated method stub
 		super.onDisable();
 	}
 
 	
 @Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-		// TODO Auto-generated method stub
 		return super.onCommand(sender, command, label, args);
 	}
 
@@ -116,8 +111,7 @@ System.out.println("sign");
 					System.out.println("Writed");
 					writer.close();
                 	 } catch (IOException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
+					e1.printStackTrace();
 					}
                 	 System.out.println("Not in");
                 	}
@@ -163,8 +157,6 @@ public void StartCountdownSign(){
 					s.update();
 			}
 				}
-			// TODO Auto-generated method stub
-			
 		}
 	}
 		
